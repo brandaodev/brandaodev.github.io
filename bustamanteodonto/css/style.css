@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: max-content;
+}
+
+body{
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    background: linear-gradient(360deg, rgba(255,162,84,1) 0%, rgba(255,204,164,1) 100%);
+}
+
+.avatar{
+    width: 150px;
+    border-radius: 100%;
+    box-shadow: 0 0 20px white;
+}
+
+.profile{
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: black 1px 1px;
+}
+
+h1{
+    color: white;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+h2{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+h4{
+    color: white;
+    margin-top: 15px;
+    font-size: 10px;
+}
+
+.social{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.social img{
+    width: 20px;
+}
+
+.link-list{
+    list-style: none;
+    text-align: center;
+}
+
+.link-list li{
+    margin: 20px 30px;
+}
+
+.link-list li a{
+    color: rgb(255,135,35);
+    font-weight: bold;
+    text-decoration: none;
+    background: white;
+    border: 2px;
+    border-radius: 5px;
+    padding: 10px;
+    display: block;
+    box-shadow: 0 0 20px white;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.footer{
+    margin-top: 50px;
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: normal;
+}
