@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+body{
+    font-size: 100%;
+    background: white;
+    text-decoration: none;
+}
+
+main{
+    padding-top: 50px;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.cabecalho-logo{
+    height: 30px;
+}
+
+.conteudo {
+    margin: auto;
+    align-items: center;
+}
+
+.conteudo-principal {
+    padding: 30px;
+    background-image: url(/img/895422.jpg);
+    background-color: #838383 ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.conteudo-principal-escrito{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo-principal-escrito-titulo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+}
+
+.conteudo-principal-escrito-subtitulo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+.conteudo-principal-imagem{
+    padding-top: 30px;
+    height: 200px;
+    max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.conteudo-principal-escrito-botao{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    background-color: #323232;
+    font-weight: 400;
+    border-radius: 20px;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    color: white;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.conteudo-principal-escrito-botao:hover {
+    background-color: #838383
+}
+
+.conteudo-principal-imagem:hover{
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.conteudo-secundario-titulo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.conteudo-secundario-subtitulo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.servicos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;;
+}
+
+.servicos-imagem{
+    height: 200px;
+    padding: 20px;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+
+.servicos-imagem:hover{
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.servicos-titulo-principal{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.servicos-titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.servicos-paragrafos-primeiro{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.servicos-paragrafos-segundo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.servicos-botao{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    background-color: #323232;
+    font-weight: 400;
+    border-radius: 20px;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    color: white;
+    text-align: center;
+    display: block;
+    margin: 20px ;
+}
+
+.servicos-botao:hover {
+    background-color: #838383
+}
+
+.informacoes{
+    background-image: url(/img/fundo-ios-apple-iphone-macbook.jpg);
+    background-color: #838383 ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 20px;
+}
+
+.informacoes-titulo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.informacoes-subtitulo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 20px;
+    text-align: center;
+}
+
+.informacoes-maps{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.informacoes-escrita{
+    display: flex;
+    flex-direction: column;
+}
+
+.informacoes-dois{
+    background-color: #E2E2E2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    gap: 60px;
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px 0;
+    text-align: center;
+} 
+
+.contato-escrita-titulo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.contato-escrita-paragrafo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.contato-escrita-link{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.atendimento{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.atendimento-escrita{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.atendimento-escrita-paragrafo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.rodape{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-top: 1px solid black;
+    padding: 30px 30px 10px 30px;
+}
+
+.rodape-loja{
+    font-size: 12px;
+    color: #aaaaaa;
+}
+
+.rodape-dev{
+    font-size: 12px;
+    color: #aaaaaa;
+}
