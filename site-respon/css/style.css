@@ -40,7 +40,6 @@ main{
 
 .conteudo {
     margin: auto;
-    align-items: center;
 }
 
 .conteudo-principal {
@@ -317,4 +316,69 @@ main{
 .rodape-dev{
     font-size: 12px;
     color: #aaaaaa;
+}
+
+@media (min-width: 850px) {
+
+    .cabecalho-logo{
+        height: 50px;
+    }
+
+    .conteudo-principal {
+        flex-direction: row;
+        align-items: left;
+        padding: 80px;
+    }
+
+    .conteudo-principal-escrito-titulo{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        text-align: left;
+    }
+    
+    .conteudo-principal-escrito-subtitulo{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        text-align: left;
+    }
+    
+    
+    .conteudo-principal-imagem{
+        padding-top: 30px;
+        height: 350px;
+    }
+
+    .conteudo-secundario {
+        padding: 0 40px;
+    }
+
+
+    .servicos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    .servicos-imagem{
+        height: 450px;
+    }
+
+    .servicos-titulo{
+        padding: 20px;
+    }
+
+
+
+
+
+
+
+
+    .contato{
+        flex-direction: row;
+        text-align: left
+    }
 }
