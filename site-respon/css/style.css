@@ -28,9 +28,8 @@ main{
 
 .cabecalho {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
     padding: 10px;
 }
 
@@ -38,12 +37,40 @@ main{
     height: 30px;
 }
 
+.cabecalho-menu{
+    justify-content: space-between;
+}
+
+.cabecalho-menu ul li{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin: 15px 0 5px 0;
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.cabecalho-menu ul li a{
+    margin: 15px 0 5px 0;
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.cabecalho-menu ul li a:hover{
+    color: #838383;
+}
+
 .conteudo {
     margin: auto;
 }
 
 .conteudo-principal {
-    padding: 30px;
+    padding: 60px 30px 30px 30px;
     background-image: url(../img/895422.jpg);
     background-color: #838383 ;
     background-size: cover;
@@ -318,10 +345,56 @@ main{
     color: #aaaaaa;
 }
 
+.sobre{    
+    font-family: 'Poppins', sans-serif;
+}
+
+.sobre-principal{
+    margin: auto;
+    background-image: url(../img/line-tech.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sobre-titulo{
+    font-size: 24px;
+    font-weight: 700;
+    padding: 30px 0;
+}
+
+.sobre-texto{
+    margin: auto;
+    display: flex;
+    padding: 50px 100px 100px 100px;
+    background-color: #eeeeee;
+}
+
+.sobre-subtitulo{
+    font-size: 14px;
+    font-weight: 400;
+}
+
 @media (min-width: 850px) {
 
+    .cabecalho{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 80px;
+    }
+
     .cabecalho-logo{
-        height: 50px;
+        height: 60px;
+    }
+
+    .cabecalho-menu ul li{
+        font-size: 16px;
+        padding: 10px;
     }
 
     .conteudo-principal {
@@ -369,13 +442,6 @@ main{
     .servicos-titulo{
         padding: 20px;
     }
-
-
-
-
-
-
-
 
     .contato{
         flex-direction: row;
