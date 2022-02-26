@@ -5,15 +5,17 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 header{
-    position: fixed;
     flex-direction: row;
     justify-content: space-around;
     background-color: white;
     border-bottom: 1px solid black;
     width: 100%;
+    z-index: 99;
+    top: 0;
 }
 
 body{
@@ -22,9 +24,7 @@ body{
     text-decoration: none;
 }
 
-main{
-    padding-top: 50px;
-}
+
 
 .cabecalho {
     display: flex;
@@ -345,7 +345,7 @@ main{
     color: #aaaaaa;
 }
 
-.sobre{    
+.sobre, .localizacao{    
     font-family: 'Poppins', sans-serif;
 }
 
@@ -355,6 +355,22 @@ main{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.localizacao{
+    background-image: url(../img/background-estrelas.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.localizacao-principal{
+    margin: auto;
     padding-top: 50px;
     display: flex;
     flex-direction: column;
@@ -362,7 +378,13 @@ main{
     justify-content: space-around;
 }
 
-.sobre-titulo{
+.localizacao-mapa{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.sobre-titulo, .localizacao-titulo{
     font-size: 24px;
     font-weight: 700;
     padding: 30px 0;
@@ -375,12 +397,46 @@ main{
     background-color: #eeeeee;
 }
 
-.sobre-subtitulo{
+.localizacao-texto{
+    margin: auto;
+    display: flex;
+    padding: 50px 100px 100px 100px;
+}
+
+.localizacao-mapa{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sobre-subtitulo, .localizacao-subtitulo{
     font-size: 14px;
     font-weight: 400;
 }
 
+.sobre-img{
+    padding: 40px;
+    flex-direction: row;
+    background-color: #eeeeee;
+}
+
+.sobre-img-div{
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    justify-content: space-around;
+}
+
+.sobre-img-1, .sobre-img-2{
+    background-color: #eeeeee;
+    border-radius: 30px;
+}
+
 @media (min-width: 850px) {
+
+    header{
+        position: fixed !important;
+    }
 
     .cabecalho{
         flex-direction: row;
@@ -424,7 +480,7 @@ main{
     }
 
     .conteudo-secundario {
-        padding: 0 40px;
+        padding: 80px 40px;
     }
 
 
@@ -432,7 +488,7 @@ main{
         display: flex;
         flex-direction: row;
         justify-content: center;
-        padding: 30px;
+        padding: 60px 30px;
     }
 
     .servicos-imagem{
@@ -446,5 +502,9 @@ main{
     .contato{
         flex-direction: row;
         text-align: left
+    }
+
+    .informacoes{
+        padding-top: 60px;
     }
 }
