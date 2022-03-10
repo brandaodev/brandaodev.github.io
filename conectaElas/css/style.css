@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        scroll-behavior: smooth;
+        font-family: 'Questrial', sans-serif;
+        font-weight: 400;
+}
+
+header{
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 80px 0 80px;
+}
+
+body{
+    background: rgb(67,17,112);
+    background: linear-gradient(45deg, rgba(67,17,112,1) 41%, rgba(255,206,135,1) 100%);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: covers;
+    color: white;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+h2{
+    padding: 15px 0;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cabecalho-img{
+    padding: 10px;
+    width: 100px;
+}
+
+.navbar{
+    justify-content: space-around;
+}
+
+.navbar ul li{
+    margin: 15px 0 5px 0;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.navbar ul li a{
+    margin: 15px 0 5px 0;
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.conteudo {
+    margin: auto;
+    padding: 0 30px;
+}
+
+.conteudo-principal {
+    padding: 30px 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.conteudo-imagem{
+    width: 50%;
+}
+
+.conteudo-secundario{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.form-imagem{
+    width: 40%;
+}
+
+fieldset {
+    border: 0;
+}
+
+fieldset.grupo .campo {
+    float:  left;
+    margin-right: 1em;
+}
+
+input, button{
+    border-radius: 5px;
+}
+
+.campo{
+    margin-bottom: 1em;
+}
+
+.call-form{
+    margin-bottom: 1em;
+}
+
+#titulo-form{
+    margin-bottom: 1em;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo [type="tel"], .campo textarea {
+    padding: 0.2em 30px;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+
+.btn {
+    font-size: 20px;
+    background: rgba(255,206,135,1);
+    border: 0;
+    color: rgba(67,17,112,1);
+    padding: 20px 30px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+/* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
+.btn:hover {
+    background: #CCBBFF;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.781);
+    text-shadow: none;
+}
+
+/* Elementos de classe botão e de tag <select> */
+.btn, select{
+    cursor: pointer;
+}
+
+.livros{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+#book{
+    width: 12em;
+}
+
+#book:hover{
+    -moz-transform: scale(2.2);
+	-webkit-transform: scale(2.2);
+	transform: scale(1.1);
+}
+
+.sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.avatar-laiza{
+    padding: 50px 20px;
+    width: 40%;
+}
+
+.avatar-laiza:hover{
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.rodape{
+    color: white;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rodape-dev{
+    font-size: 12px;
+    color: #aaaaaa;
+}
